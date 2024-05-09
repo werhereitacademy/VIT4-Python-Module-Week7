@@ -278,12 +278,16 @@ class Ui_MainWindow(object):
         self.ui.setupUi(MainWindow)    
 
     def admin_exit_clicked(self):
-      
         print("Admin exit düğmesine tıklandı")
 
 
     def user_login_clicked(self):
-        print("User Login düğmesine tıklandı!")
+        from preference_menu import Ui_MainWindow
+        self.MainWindow= QtWidgets.QMainWindow()
+        self.ui =Ui_MainWindow()
+        self.ui.setupUi(MainWindow)          
+        
+
 
     def user_exit_clicked(self):
         print("User exit düğmesine tıklandı")
