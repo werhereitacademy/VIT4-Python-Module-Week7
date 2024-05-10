@@ -7,7 +7,6 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
 
 
 class Ui_interviews_page_MainWindow(object):
@@ -210,9 +209,14 @@ class Ui_interviews_page_MainWindow(object):
         print("Arrived projects düğmesine tıklandı!")
 
     def back_to_preferences_clicked(self):
-        print("Back to preferences düğmesine tıklandı!")
+        from preference_menu import Ui_MainWindow
+        self.MainWindow= QtWidgets.QMainWindow()
+        self.ui =Ui_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show() 
 
     def exit_clicked(self):
+        from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
         QApplication.instance().quit()
 
 

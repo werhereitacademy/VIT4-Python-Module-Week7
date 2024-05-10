@@ -197,7 +197,8 @@ class Ui_applications_page_MainWindow(object):
         from preference_admin_menu import Ui_admin_pref_men_MainWindow
         self.MainWindow= QtWidgets.QMainWindow()
         self.ui =Ui_admin_pref_men_MainWindow()
-        self.ui.setupUi(applications_page_MainWindow) 
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()
         
     def Former_VIT_Check_clicked(self):
         print("-------Now you are looking at Former_VIT_Check")

@@ -296,7 +296,8 @@ class Ui_MainWindow(object):
         from preference_admin_menu import Ui_admin_pref_men_MainWindow
         self.MainWindow= QtWidgets.QMainWindow()
         self.ui =Ui_admin_pref_men_MainWindow()
-        self.ui.setupUi(MainWindow)    
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()    
 
     def admin_exit_clicked(self):
         from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
@@ -307,7 +308,8 @@ class Ui_MainWindow(object):
         from preference_menu import Ui_MainWindow
         self.MainWindow= QtWidgets.QMainWindow()
         self.ui =Ui_MainWindow()
-        self.ui.setupUi(MainWindow)          
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()         
         
 
 

@@ -7,6 +7,8 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+
 
 
 class Ui_MainWindow(object):
@@ -125,14 +127,58 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        self.applications_pushButton.clicked.connect(self.applications_clicked)
+
+        self.interviews_pushButton.clicked.connect(self.interviews_clicked)
+        
+        self.mentor_meeting_pushButton.clicked.connect(self.mentor_meeting_clicked)
+        self.bact_menu_pushButton.clicked.connect(self.bact_menu_clicked)
+        self.exit_pushButton.clicked.connect(self.exit_clicked)
+
+
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Preference Menu"))
         self.applications_pushButton.setText(_translate("MainWindow", "Applications"))
         self.mentor_meeting_pushButton.setText(_translate("MainWindow", "Mentor Meeting"))
         self.interviews_pushButton.setText(_translate("MainWindow", "Interviews"))
         self.bact_menu_pushButton.setText(_translate("MainWindow", "Back to Menu"))
         self.exit_pushButton.setText(_translate("MainWindow", "Exit"))
+
+    def applications_clicked(self):
+        from  applications_page import Ui_applications_page_MainWindow
+        self.MainWindow = QtWidgets.QMainWindow()
+        self.ui = Ui_applications_page_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()
+
+    def interviews_clicked(self):
+        from interviews_page import Ui_interviews_page_MainWindow
+        self.MainWindow = QtWidgets.QMainWindow()
+        self.ui = Ui_interviews_page_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show() 
+
+
+    def mentor_meeting_clicked(self):
+        from mentor_interview_page import Ui_mentor_interviews_page_MainWindow
+        self.MainWindow = QtWidgets.QMainWindow()
+        self.ui = Ui_mentor_interviews_page_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()
+
+    def bact_menu_clicked(self):
+        from login_window import Ui_MainWindow
+        self.MainWindow = QtWidgets.QMainWindow()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()
+        
+
+    def exit_clicked(self):
+        from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+        QApplication.instance().quit()        
 
 
 if __name__ == "__main__":
