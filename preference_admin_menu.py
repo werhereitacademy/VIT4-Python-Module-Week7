@@ -145,4 +145,3 @@ if __name__ == "__main__":
     ui.setupUi(admin_pref_men_MainWindow)
     admin_pref_men_MainWindow.show()
     sys.exit(app.exec())
-S
