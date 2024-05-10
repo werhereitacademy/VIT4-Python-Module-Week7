@@ -7,6 +7,8 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+
 
 
 class Ui_admin_menu_MainWindow(object):
@@ -168,10 +170,10 @@ class Ui_admin_menu_MainWindow(object):
         print("Send mail düğmesine tıklandı!")
 
     def preference_admin_menu_clicked(self):
-        print("Preference admin menu düğmesine tıklandı!")
+        print("Preference_admin_menu düğmesine tıklandı!")
 
     def exit_clicked(self):
-        print("Exit düğmesine tıklandı!")
+        QApplication.instance().quit()
 
 
 if __name__ == "__main__":
