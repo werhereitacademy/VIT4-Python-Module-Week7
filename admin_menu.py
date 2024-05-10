@@ -168,10 +168,16 @@ class Ui_admin_menu_MainWindow(object):
         print("Send mail düğmesine tıklandı!")
 
     def preference_admin_menu_clicked(self):
-        print("Preference admin menu düğmesine tıklandı!")
+        from preference_admin_menu import Ui_admin_pref_men_MainWindow
+        self.MainWindow= QtWidgets.QMainWindow()
+        self.ui =Ui_admin_pref_men_MainWindow()
+        self.ui.setupUi(self.MainWindow) 
+        self.MainWindow.show()   
+
 
     def exit_clicked(self):
-        print("Exit düğmesine tıklandı!")
+        from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton
+        QApplication.instance().quit()
 
 
 if __name__ == "__main__":
