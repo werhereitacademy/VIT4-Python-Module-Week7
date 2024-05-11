@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>777</width>
+    <height>594</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MyLoginForm {
+background: white;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="mainFrame">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>0</y>
+         <width>81</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>VIT3/logo1.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>520</y>
+         <width>212</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    color: white;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #ff6666,
+                                       stop:0.1 #ff7777,
+                                       stop:0.49 #cc3333,
+                                       stop:0.5 #bb2244,
+                                       stop:1 #cc3333);
+    border-width: 1px;
+    border-color: #993333;
+    border-style: solid;
+    border-radius: 7px;
+    padding: 3px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 20px;
+    max-height: 20px;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #ff8888,
+                                       stop:0.1 #ff9999,
+                                       stop:0.49 #cc5555,
+                                       stop:0.5 #bb3355,
+                                       stop:1 #cc5555);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #ff4444,
+                                       stop:0.1 #ff5555,
+                                       stop:0.49 #cc1111,
+                                       stop:0.5 #aa0022,
+                                       stop:1 #cc1111);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Exit</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../Users/Durak/Downloads/close_FILL0_wght400_GRAD0_opsz24.png</normaloff>../../Users/Durak/Downloads/close_FILL0_wght400_GRAD0_opsz24.png</iconset>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>10</y>
+         <width>361</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>VIT3/logo2.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>520</y>
+         <width>212</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    color: white;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #CCCCCC,
+                                       stop:0.1 #DDDDDD,
+                                       stop:0.49 #AAAAAA,
+                                       stop:0.5 #999999,
+                                       stop:1 #AAAAAA);
+    border-width: 1px;
+    border-color: #999999;
+    border-style: solid;
+    border-radius: 7px;
+    padding: 3px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 20px;
+    max-height: 20px;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #DDDDDD,
+                                       stop:0.1 #EEEEEE,
+                                       stop:0.49 #BBBBBB,
+                                       stop:0.5 #AAAAAA,
+                                       stop:1 #BBBBBB);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #AAAAAA,
+                                       stop:0.1 #BBBBBB,
+                                       stop:0.49 #888888,
+                                       stop:0.5 #777777,
+                                       stop:1 #888888);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Return- Choice</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../Users/Durak/Downloads/choice.png</normaloff>../../Users/Durak/Downloads/choice.png</iconset>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>210</y>
+         <width>741</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(255, 255, 255)</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>10</number>
+       </property>
+       <property name="midLineWidth">
+        <number>10</number>
+       </property>
+       <column>
+        <property name="text">
+         <string>Interview Date</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Mentor</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>IT Knowledge</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Intensity</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Comment</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>611</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:rgb(255, 255, 255)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>110</y>
+         <width>121</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    color: white;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #CCCCCC,
+                                       stop:0.1 #DDDDDD,
+                                       stop:0.49 #AAAAAA,
+                                       stop:0.5 #999999,
+                                       stop:1 #AAAAAA);
+    border-width: 1px;
+    border-color: #999999;
+    border-style: solid;
+    border-radius: 7px;
+    padding: 3px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 50px;
+    max-width: 200px;
+    min-height: 20px;
+    max-height: 20px;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #DDDDDD,
+                                       stop:0.1 #EEEEEE,
+                                       stop:0.49 #BBBBBB,
+                                       stop:0.5 #AAAAAA,
+                                       stop:1 #BBBBBB);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #AAAAAA,
+                                       stop:0.1 #BBBBBB,
+                                       stop:0.49 #888888,
+                                       stop:0.5 #777777,
+                                       stop:1 #888888);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../Users/Durak/Downloads/search_FILL0_wght300_GRAD200_opsz48.png</normaloff>../../Users/Durak/Downloads/search_FILL0_wght300_GRAD200_opsz48.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>212</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    color: white;
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #CCCCCC,
+                                       stop:0.1 #DDDDDD,
+                                       stop:0.49 #AAAAAA,
+                                       stop:0.5 #999999,
+                                       stop:1 #AAAAAA);
+    border-width: 1px;
+    border-color: #999999;
+    border-style: solid;
+    border-radius: 7px;
+    padding: 3px;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 20px;
+    max-height: 20px;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #DDDDDD,
+                                       stop:0.1 #EEEEEE,
+                                       stop:0.49 #BBBBBB,
+                                       stop:0.5 #AAAAAA,
+                                       stop:1 #BBBBBB);
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                       stop:0 #AAAAAA,
+                                       stop:0.1 #BBBBBB,
+                                       stop:0.49 #888888,
+                                       stop:0.5 #777777,
+                                       stop:1 #888888);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>All Interviews</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../Users/Durak/Downloads/profiles.png</normaloff>../../Users/Durak/Downloads/profiles.png</iconset>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="cokluSecenekKutusu">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Please select the relevant line from the list!</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Suitable for entire VIT project.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Suitable for initial IT training and be directed to ITPH.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Suitable for English training and be directed to ITPH.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Directing within the scope of the VIT project to ITPH would be suitable.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Directing to work with individual coaching would be better.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Suitable to participate in the next VIT project.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Should be directed to another sector.</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Other.</string>
+        </property>
+       </item>
+      </widget>
+      <zorder>pushButton_2</zorder>
+      <zorder>label_4</zorder>
+      <zorder>label_3</zorder>
+      <zorder>pushButton_3</zorder>
+      <zorder>tableWidget</zorder>
+      <zorder>textBrowser</zorder>
+      <zorder>pushButton_7</zorder>
+      <zorder>pushButton_6</zorder>
+      <zorder>cokluSecenekKutusu</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
